@@ -19,7 +19,7 @@ MODEL:
   IMAGE_SIZE:
   - 192
   - 256
-  NUM_JOINTS: 17
+  NUM_JOINTS: 17    //关节数
   EXTRA:
     TARGET_TYPE: 'gaussian'
     HEATMAP_SIZE:
