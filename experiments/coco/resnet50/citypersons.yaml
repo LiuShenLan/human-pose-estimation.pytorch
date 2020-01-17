@@ -1,4 +1,4 @@
-GPUS: '0,1,2,3,4,5,6,7'
+GPUS: '0,1'
 DATA_DIR: ''
 OUTPUT_DIR: 'output'
 LOG_DIR: 'log'
@@ -6,10 +6,10 @@ WORKERS: 4
 PRINT_FREQ: 100
 
 DATASET:
-  DATASET: 'coco'
-  ROOT: 'data/citypersons/'
-  TEST_SET: 'val2017'
-  TRAIN_SET: 'train2017'
+  DATASET: 'citypersons'
+  ROOT: 'data/'
+  TEST_SET: 'citypersons'
+  TRAIN_SET: 'coco/train2017'
   FLIP: true
   ROT_FACTOR: 40
   SCALE_FACTOR: 0.3
@@ -19,7 +19,7 @@ MODEL:
   IMAGE_SIZE:
   - 192
   - 256
-  NUM_JOINTS: 17
+  NUM_JOINTS: 9
   EXTRA:
     TARGET_TYPE: 'gaussian'
     HEATMAP_SIZE:
